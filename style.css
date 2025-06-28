@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+/*  :root allows me to reuse it throughout my CSS and easily change it from one place, and it gives primary and secondaey colour to my movie app background*/
+:root {
+    --primary-color: #22254b;
+    --secondary-color: #373b69;
+}
+
+
+/*it gives primary colour to my movie app background*/
+body {
+    background-color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/*pading, display, justify-content, background-color all are css properties.*/
+header {
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--secondary-color);
+}
+
+/* This  search class is for search bar on top right corner*/
+.search {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    border-radius: 50px;
+    font-family: inherit;
+    font-size: 1rem;
+    /* 0.5 rem top and bottom. 1 rem is left and right*/
+    padding: 0.5rem 1rem;
+    color: #fff;
+}
+
+.search::placeholder {
+    color: #7378c5;
+}
+
+.search:focus {
+    outline: none;
+    background-color: var(--primary-color);
+}
+
+/*This is for all main elements on pages like picture and titles, without this movies will be showing in all vertical directions in one line.*/
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*It shows all the movie sequence of four  in one row, without this one movie image occupy whole page.*/
+.movie {
+    width: 300px;
+    margin: 1rem;
+    background-color: var(--secondary-color);
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+/*It control width of movie image, without this movie image shows vertically stretch down*/
+.movie img {
+    width: 100%;
+}
+
+/*It edits movie titles I wrote at bottom border of movies*/
+.movie-info {
+    color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.2rem;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+}
+
+
+/*It edits  rating properties*/
+.movie-info span {
+    background-color: var(--primary-color);
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+/*Gives green colour to rating*/
+.movie-info span.green {
+    color: lightgreen;
+}
+
+/*Gives orange colour to rating*/
+.movie-info span.orange {
+    color: orange;
+}
+
+/*Gives red colour to rating*/
+.movie-info span.red {
+    color: red;
+}
+
+/*It gives all the css properties to overview class selector*/
+.overview {
+    background-color: #fff;
+    padding: 2rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-height: 100%;
+    /* when I hover over on overview text will up and down fully 101 percent*/
+    transform: translateY(101%);
+    overflow-y: auto;
+    /* transform speed is 0.50 seconds */
+    transition: transform 0.50s ease-in;
+}
+
+/*It gives pseudo class(hover) to overview class, and translateY(0) mean it up and down the overwiew when mouse hover on it.*/
+.movie:hover .overview {
+    transform: translateY(0);
+}
