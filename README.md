@@ -34,7 +34,7 @@ Using the TMDB REST API:
 
 ## 📸 Screenshots
 
-![image alt]()
+![image alt](https://github.com/olki123/Movie-app/blob/main/movie%20app%20image.png?raw=true)
 ![image alt](https://github.com/olki123/Movie-app/blob/main/movie%20app%20image..png?raw=true)
 
 
