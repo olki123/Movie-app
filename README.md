@@ -35,8 +35,7 @@ Using the TMDB REST API:
 ## 📸 Screenshots
 
 *(![image](https://github.com/user-attachments/assets/f2cf10c2-0628-4a74-8b7a-989c7dcccb16)*
-*(![image] (![image](https://github.com/user-attachments/assets/44691646-4a60-4c01-b1f9-6de0b4c89f23)
-)*
+![image alt]()
 
 
 
