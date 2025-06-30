@@ -35,7 +35,7 @@ Using the TMDB REST API:
 ## 📸 Screenshots
 
 *(![image](https://github.com/user-attachments/assets/f2cf10c2-0628-4a74-8b7a-989c7dcccb16)*
-*(![image]https://raw.githubusercontent.com/olki123/Movie-app/1eacdb4d2ee478ad7334d83e79084c92e46a2116/movie%20app%20image.png)*
+*(![image] (https://raw.githubusercontent.com/olki123/Movie-app/1eacdb4d2ee478ad7334d83e79084c92e46a2116/movie%20app%20image.png)*
 
 
 
